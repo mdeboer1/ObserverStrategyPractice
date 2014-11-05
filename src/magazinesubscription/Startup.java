@@ -49,7 +49,7 @@ public class Startup {
             System.out.println("Name is: " + subscriber.getName() + " Address is: " +
                     subscriber.getAddress());
         }
-        
+        System.out.println("Adding a new subscriber");
         PrivateIndividualMagazineSubscriber subscriber3 = 
                 new PrivateIndividualMagazineSubscriber("Jill Smith", "123 Home St",
                 3);

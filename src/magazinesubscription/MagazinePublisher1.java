@@ -20,11 +20,12 @@ public class MagazinePublisher1 implements MagazinePublisherAsSubscriber {
     
     public final void addSubscriber(PrivateIndividualMagazineSubscriber subscriber){
         subscribers.add(subscriber);
-//        Set<PrivateIndividualMagazineSubscriber> set = new HashSet<>(subscribers);
+        Set<PrivateIndividualMagazineSubscriber> set = new HashSet<>(subscribers);
 //        subscribers.clear();
 //        for (PrivateIndividualMagazineSubscriber s : set){
 //            subscribers.add(subscriber);
 //        }
+        subscribers = new ArrayList<>(set);
     }
     
     public final void publishNewEdition(){
